@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+th, td {
+    padding: 16px;
+}
+
+th {
+    background: #00ADE4;
+}
+
+td {
+    background: #fffdd0;
+}
+
+table {
+    margin-top: 20px;
+    width: 1034px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+body {
+    background-image: url(img/hospital.jpg);
+    background-size: 100%;
+}
+
+.listpatients {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
