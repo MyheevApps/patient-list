@@ -1,3 +1,9 @@
+<?php
+
+require_once 'connect.php';
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="ru">
@@ -32,6 +38,25 @@
                 <th>Дата закрытия</th>
                 <th></th>
             </tr>
+
+            <?php
+                $hospital = mysqli_query($connect, query:"SELECT * FROM `incidents`");
+                $hospital = mysqli_fetch_all($hospital);
+                foreach ($hospital as $part) {
+                    ?>
+                    
+                    <tr>
+                        <td><a href="pagethree.php"><?= $part[0]?></a></td>
+                        <td><?= $part[1]?></td>
+                        <td><?= $part[2]?></td>
+                        <td><?= $part[3]?></td>
+                        <td><?= $part[4]?></td>
+                        <td><a href="pagethree.php">Просмотр</a></td>
+                    </tr>
+
+                    <?php
+                }
+            ?>
         </table>
 
     </body>
