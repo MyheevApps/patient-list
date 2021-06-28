@@ -19,7 +19,14 @@ require_once 'connect.php';
 
     <body>
 
-        <div ><h1>Список пациентов</h1></div>
+    <div class="top-menu">
+
+        <ul>
+            <li><a href="index.php">Список пациентов</a></li>
+            <li><a href="pagetwo.php">Инциденты</a></li>
+        </ul>
+
+    </div>
 
         <table>
             <tr>
