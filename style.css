@@ -20,14 +20,38 @@ table {
     width: 1034px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
-h1 {
-    width: 100%;
+.top-menu {
+    width: 650px;
+    height: 80px;
+    float: left;
+    margin-left: 200px;
+}
+
+.top-menu ul li{
+    list-style: none;
+    float: left;
     text-align: center;
-    margin-top: 20px;
-    color: white;
+}
+
+.top-menu ul li a {
+    display: block;
+    text-decoration: none;
     text-transform: uppercase;
+    font-size: 17px;
+    color: white;
+    margin-left: 100px;
+    padding-top: 28px;
+    cursor: pointer;
+}
+
+.top-menu ul li a:hover {
+    background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+    background-position: 0 100%;
+    background-size: 100% 2px;
+    background-repeat: repeat-x;
 }
 
 body {
